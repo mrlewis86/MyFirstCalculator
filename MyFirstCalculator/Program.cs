@@ -35,11 +35,11 @@ namespace MyFirstCalculator
             div = num1 / num2;
             rem = num1 % num2;
 
-            Console.WriteLine("Addition\t\t{0}", add);
-            Console.WriteLine("Subtraction\t\t{0}", sub);
-            Console.WriteLine("Multiplication\t\t{0}", mul);
-            Console.WriteLine("Division\t\t{0}", div);
-            Console.WriteLine("Remainder\t\t{0}", rem);
+            Console.WriteLine("Addition\t\t" + add);
+            Console.WriteLine("Subtraction\t\t" + sub);
+            Console.WriteLine("Multiplication\t\t" + mul);
+            Console.WriteLine("Division\t\t" + div);
+            Console.WriteLine("Remainder\t\t" + rem);
 
             Console.ReadLine();
 
