@@ -8,18 +8,11 @@ namespace MyFirstCalculator
         {
             int num1; int num2;
 
-            int add; int sub; int mul;
-
-            float div; int rem;
-
             do
             {
-                Console.WriteLine("Give me a number!");
-                num1 = Convert.ToInt32(Console.ReadLine());
+                num1 = UI.GetIntegerFromUser("Give me a number!");
 
-                Console.WriteLine("Time for a SECOND number!!");
-
-                num2 = Convert.ToInt32(Console.ReadLine());
+                num2 = UI.GetIntegerFromUser("Time for a SECOND number!!");
                 if (num2 == 0)
                 {
                     Console.WriteLine("Cant divide by 0 chump!!!");
@@ -29,11 +22,11 @@ namespace MyFirstCalculator
 
             Console.WriteLine("Thanks buddy, your results are listed below");
 
-            add = num1 + num2;
-            sub = num1 - num2;
-            mul = num1 * num2;
-            div = num1 / num2;
-            rem = num1 % num2;
+            int add = num1 + num2;
+            int sub = num1 - num2;
+            int mul = num1 * num2;
+            float div = num1 / num2;
+            int rem = num1 % num2;
 
             Console.WriteLine("Addition\t\t" + add);
             Console.WriteLine("Subtraction\t\t" + sub);
